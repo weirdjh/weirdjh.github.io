@@ -1,0 +1,10 @@
+<ul class="sidebar_menu">
+  {% for key in site.category %}
+  <li>
+  	<div class="menu_liner"></div>
+    <a class="sidebar_menu_item" href="{{ site.baseurl }}/archive/{{ key }}/"> 
+    	<span>{{ key }}</span> 
+    </a>
+  </li>
+  {% endfor %}
+</ul>

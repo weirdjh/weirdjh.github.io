@@ -94,6 +94,7 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+    margin-left: 250px;
 }
 
 .footer-heading {
@@ -162,6 +163,7 @@
  * Page content
  */
 .page-content {
+    margin-left:250px;
     padding: $spacing-unit 0;
 }
 
@@ -234,3 +236,104 @@
         }
     }
 }
+
+
+/**
+ * Sidebar
+ */
+
+.head_liner{
+    height:5px;
+    background-color: rgba(150,50,30,1)
+}
+
+.profile {
+    position: relative;
+    margin : 30px 35px 30px 35px;
+}
+
+.profile h1{
+    position: relative;
+    text-align: right;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.profile p{
+    text-align:right;
+    font-size: 14px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #222629;
+    overflow-x: hidden; /* hide scroll */
+    color: rgba(255,255,255,0.5);
+}
+
+.side_menu ul li a {
+    display: block;
+    padding: 10px 35px 10px 25px;
+    text-decoration: none;
+    outline: 0;
+    border: 0;
+    transition: none;
+    font-size: 15px;
+    color: rgba(255,255,255,0.5);
+}
+
+.side_menu ul li a:hover{
+    background: linear-gradient(
+        to right,
+        rgba(150,50,30,1) 0px,
+        rgba(150,50,30,1) 5px,
+        rgba(0,0,0,0.15) 5px,
+        rgba(0,0,0,0.15) 250px  
+    );
+    box-shadow: inset 0 0 0.25em 0 rgba(0,0,0,0.44);
+    color: #fff;
+}
+
+.side_menu ul li a:active{
+    background: rgba(0,0,0,0.15);
+    box-shadow: inset 0 0 0.25em 0 rgba(0,0,0,0.44);
+    color: #fff;
+}
+
+.side_menu ul li a span {
+    display: block;
+    text-align:right;
+
+}
+
+.social {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.social hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    margin: 1px 0px;
+    padding: 0;
+}
+
+.social ul{
+    margin: 2px auto;
+    padding: 0;
+}
+
+.social ul li {
+    display: inline;
+    text-align: center;
+}
+

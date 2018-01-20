@@ -1,0 +1,15 @@
+<div class="sidebar">
+  <div class="head_liner"></div> 
+
+	<div class="profile">
+  	{% include profile.html %}
+  </div>
+
+  <nav class="side_menu" role="navigation">
+    {% include side_menu.html %}
+  </nav>
+  
+  {% include search.html %}
+
+  {% include social.html social=site.author.social %}
+</div>

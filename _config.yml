@@ -5,9 +5,24 @@ description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
+#baseurl: "http://heojh93.github.io" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 github_username:  heojh93
 
 # Build settings
 markdown: kramdown
+
+category: [HOME, MENU1, MENU2, MENU3]
+
+# About
+author:
+  name: "Juhwan Heo"
+
+  photo: /images/profile_image.jpeg 
+  about:
+  social:
+    facebook: WierdHeoju
+    github: heojh93
+    google: hoojh93
+    steam:  76561198089795914
+

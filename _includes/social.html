@@ -1,0 +1,30 @@
+<div class="social">
+  <hr>
+  <ul>
+{% for link in include.social %}
+  {% assign platform = link[0] %}
+  {% assign username = link[1] %}
+
+  {% if platform == "facebook" %}
+    {% assign url = "https://facebook.com/" | append: username %}
+    {% include social_list_item.html platform=platform url=url %}
+  {% endif %}
+
+  {% if platform == "google" %}
+    {% assign url = "https://plus.google.com/" | append: username %}
+    {% include social_list_item.html platform=platform url=url %}
+  {% endif %}
+
+  {% if platform == "github" %}
+    {% assign url = "https://github.com/" | append: username %}
+    {% include social_list_item.html platform=platform url=url %}
+  {% endif %}
+
+  {% if platform == "steam" %}
+    {% assign url = "https://steamcommunity.com/profiles/" | append: username %}
+    {% include social_list_item.html platform=platform url=url %}
+  {% endif %}
+
+{% endfor %}
+</ul>
+  </div>  
