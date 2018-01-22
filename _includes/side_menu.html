@@ -2,14 +2,10 @@
   {% for key in site.category %}
   <li>
   	<div class="menu_liner"></div>
-  	{% if key == "HOME" %}
+  	{% if key == "Home" %}
     <a class="sidebar_menu_item" href="{{ site.baseurl }}/"> <span>{{ key }}</span> </a>
-    {% elsif key == "ABOUT" %}
-    <a class="sidebar_menu_item" href="{{ site.baseurl }}/{{ key }}/"> <span>{{ key }}</span> </a>
-    {% elsif key == "ARCHIVE" %}
-    <a class="sidebar_menu_item" href="{{ site.baseurl }}/{{ key }}/"> <span>{{ key }}</span> </a>
     {% else %}
-    <a class="sidebar_menu_item" href="{{ site.baseurl }}/category/{{ key }}/"> <span>{{ key }}</span> </a>
+    <a class="sidebar_menu_item" href="{{ site.baseurl }}/{{ key }}/"> <span>{{ key }}</span> </a>
     {% endif %}
   </li>
   {% endfor %}
