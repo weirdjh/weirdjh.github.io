@@ -1,0 +1,23 @@
+/**
+ * Tags
+ */
+
+.post-tag {
+	display: inline-block;
+	background: rgba(150,50,30,0.8);
+	padding: 0 .5rem;
+	margin-right: .5rem;
+	border-radius: 4px;
+	color: rgba(255,255,255,0.85);
+	font-size:90%;
+	transition: all 0.1s;
+}
+a.post-tag:hover {
+    background-color: rgba(150,50,30,0.5);
+    color: #fff;
+ }
+
+a.post-tag:visited {
+    color: rgba(255,255,255,0.8);
+ }
+
