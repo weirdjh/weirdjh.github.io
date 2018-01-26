@@ -2,22 +2,28 @@
  * Tags
  */
 
+.post-tags {
+	margin-bottom: 30px;
+	font-size: 12px;
+}
+
 .post-tag {
 	display: inline-block;
-	background: rgba(150,50,30,0.8);
+	background-color: #347192;
+	/*background-color: rgba(180,70,45,0.2);*/
 	padding: 0 .5rem;
 	margin-right: .5rem;
 	border-radius: 4px;
-	color: rgba(255,255,255,0.85);
+	color: #fff;
 	font-size:90%;
 	transition: all 0.1s;
 }
 a.post-tag:hover {
-    background-color: rgba(150,50,30,0.5);
+    background-color: rgba(180,70,45,1);
     color: #fff;
  }
 
 a.post-tag:visited {
-    color: rgba(255,255,255,0.8);
+    color: #fff;
  }
 
