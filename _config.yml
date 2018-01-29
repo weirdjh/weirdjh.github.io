@@ -27,7 +27,7 @@ paginate_path: "/Blog/page:num/"
 author:
   name: "Juhwan Heo"
 
-  photo: /images/profile_image.jpeg 
+  photo: /public/images/profile_image.jpeg 
   about:
   social:
     facebook: WierdHeoju

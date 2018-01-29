@@ -9,7 +9,9 @@
     {% include side_menu.html %}
   </nav>
   
-  {% include search.html %}
+  <div class="side-bottom">
+  	{% include search.html %}
 
-  {% include social.html social=site.author.social %}
+  	{% include social.html social=site.author.social %}
+  </div>
 </div>
