@@ -8,13 +8,20 @@ layout: default
     {% if page.comments %} 
 			<a href="https://{{ site.baseurl }}{{ page.url }}#disqus_thread">0 Comments</a>
 		{% endif %}
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <span class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}  |  </span>
+    <span class="post-tags">
+    {% if page.tags %}
+      {% for tag in page.tags %}
+      <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag"><i class="fa fa-tag" aria-hidden="true"></i>  {{ tag }}</a>
+      {% endfor %}
+    {% endif %}
+    </span>
+  
   </header>
 
   <article class="post-content">
     {{ content }}
   </article>
-  
 </div>
 
 <!-- Disqus -->

@@ -10,6 +10,8 @@ baseurl: ""
 #url: "http://yourdomain.com" # the base hostname & protocol for your site
 github_username:  heojh93
 
+timezone: Asia/Seoul
+
 # Build settings
 markdown: kramdown
 excerpt_separator: "<!-- more -->"
@@ -20,7 +22,7 @@ plugins:
 
 category: [Home, Blog, About]
 
-paginate: 3
+paginate: 5
 paginate_path: "/Blog/page:num/"
 
 # About

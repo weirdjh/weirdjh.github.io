@@ -295,6 +295,14 @@
     color: rgba(255,255,255,0.5);
 }
 
+.side_menu ul {
+    padding: 0px;
+}
+
+.side_menu ul li {
+    list-style: none;
+}
+
 .side_menu ul li a {
     display: block;
     padding: 10px 35px 10px 25px;
@@ -423,6 +431,14 @@
     box-shadow: inset 0 0 0.1em 0 rgba(0,0,0,0.2);
     margin-bottom: 30px;
     padding: 15px;
+}
+
+.post-title a{
+    color: black;
+}
+
+.post-title a:visited{
+    color: black;
 }
 
 .post-more {
