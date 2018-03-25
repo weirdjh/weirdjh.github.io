@@ -4,21 +4,21 @@
 
 .post-tags {
 	margin-bottom: 30px;
-	font-size: 12px;
+	font-size: 15px;
 }
 
 .post-tag {
 	display: inline-block;
-	background-color: #347192;
-	/*background-color: rgba(180,70,45,0.2);*/
+	background-color: darken(#ffd026,12%);
+	//background-color: #428bca;
 	padding: 0 .5rem;
 	border-radius: 4px;
 	color: #fff;
-	font-size:90%;
+	font-size:80%;
 	transition: all 0.1s;
 }
 a.post-tag:hover {
-    background-color: rgba(180,70,45,1);
+    background-color: darken(#428bca, 20%);
     color: #fff;
  }
 

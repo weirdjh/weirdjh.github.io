@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "[scala] oop_polymorphism"
+title:  "oop_polymorphism"
 date:   2018-02-06 15:00:00
-category: scala
+category: Scala
 tags: polymorphism
 ---
 

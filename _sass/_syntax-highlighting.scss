@@ -37,9 +37,11 @@
 .highlight .nv,.highlight .vc,.highlight .vg,.highlight .vi { color: #fff; }
 
 code.highlighter-rouge {
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 15px;
-    border: 1px solid #FEEECD;
-    background-color: #FEF5CA;
-    border-radius: 3px;
-    color: #000;
+    border-radius: 4px;
+    background-color: #F2F2F2;
+    padding: 2px 4px;
+    white-space: nowrap;
+    color: #533EDB;
 }

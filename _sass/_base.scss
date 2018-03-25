@@ -1,3 +1,4 @@
+
 /**
  * Reset some basic elements
  */
@@ -104,10 +105,10 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
     text-decoration: none;
-    color:rgba(150,50,30,1);
+    //color:rgba(150,50,30,1);
 
     &:visited {
-        color:rgba(150,50,30,1);
+        //color:rgba(150,50,30,1);
     }
 
     &:hover {
@@ -140,29 +141,15 @@ blockquote {
  * Code formatting
  */
 pre {
+    font-family: $base-font-family;
     font-size: 15px;
     border-radius: 3px;
-}
-
-code {
-
+    padding: 8px 12px;
 }
 
 code {
     padding: 1px 5px;
 }
-
-pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
 
 
 /**

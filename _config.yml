@@ -2,9 +2,7 @@
 title: Heoju's Blog
 email: hoojh93@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  
 url: "http://heojh93.github.io" # the subpath of your site, e.g. /blog/
 baseurl: ""
 #url: "http://yourdomain.com" # the base hostname & protocol for your site
@@ -20,10 +18,10 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
-category: [Home, Blog, About]
+category: [Home, Category, Tag]
 
 paginate: 5
-paginate_path: "/Blog/page:num/"
+paginate_path: "/page:num/"
 
 # About
 author:
@@ -36,6 +34,11 @@ author:
     github: heojh93
     google: hoojh93
     steam:  76561198089795914
+
+# Navigator
+category_path: category.html
+tag_pah: tag.html
+
 
 # disqus
 disqus_shortname: wierdpants

@@ -2,7 +2,7 @@
 layout: post
 title:  "Term 정리"
 date:   2018-01-29 20:00:00
-category: post
+category: knowledge
 tags: terminology
 ---
 
@@ -80,6 +80,14 @@ tags: terminology
    - Synchronous : 어떤 루틴을 완전히 끝내고 제어를 반납
    - Asynchrounous : 동작이 안 끝났는데도 일단 제어권을 반납하고 자기 할일을 계속함
    - 시스템 프로그래밍에서 다뤘던 내용과 관련해서 [정리가 잘된 글](https://nesoy.github.io/articles/2017-01/Synchronized)
+
+
+<hr>
+
+#### `Robustness`
+   - 에러로 인해 터지지 않게 견고한 프로그램을 짜는 것을 말한다. 더 깐깐하게 에러를 잡으려하면 할 수록 complexity가 증가하므로 robustness <-> scalibility & efficiency 관계에 있다.
+   - [Robust Programming](http://nob.cs.ucdavis.edu/bishop/secprog/robust.html)에서는 각종 일어날 수 없다고 생각한 일들이 일어날지도 모르는 상황에 경고하면서, 노하우를 알려주고 있는 듯 하다. 시간 날때... 한번...
+   - (Machine learning) 기존 dataset에 noise가 들어가도 stable해야함을 의미한다.
 
 
 Event Driven  

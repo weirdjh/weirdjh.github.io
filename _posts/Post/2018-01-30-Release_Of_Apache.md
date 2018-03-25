@@ -2,7 +2,7 @@
 layout: post
 title:  "Apache의 프로그램 배포"
 date:   2018-01-30 20:00:00
-category: post
+category: knowledge
 tags: checksum signature apache
 ---
 

@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title:  "[Scala] Intro"
+title:  "Scala는 어떤 언어?"
 date:   2018-02-01 20:00:00
 category: Scala
 tags: Scala FP 

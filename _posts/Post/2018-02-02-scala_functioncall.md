@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title:  "[Scala] Call by Value vs Call by Name"
+title:  "Call by Value vs Call by Name"
 date:   2018-02-02 20:00:00
 category: Scala
 tags: cbn cbv

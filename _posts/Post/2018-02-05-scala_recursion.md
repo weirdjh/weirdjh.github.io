@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title:  "[Scala] Recursion"
+title:  "Recursion"
 date:   2018-02-04 20:00:00
 category: Scala
 tags: 'tail recursion' 
