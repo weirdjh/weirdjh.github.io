@@ -6,7 +6,6 @@ category: Scala
 tags: 'tail recursion' 
 ---
 
-### Why Recursion?
 scala에서는 recursion 외에도 for/while을 이용한 loop를 지원한다. 그럼에도 recursion의 사용을 장려하는 눈치다. 어떤 장점이 있는 것일까.
 
 <!-- more -->
