@@ -51,6 +51,7 @@ h(n)을 사용하지 않는 search. 즉, 탐색에 대한 정보가 uninformed�
 >
 
 (b = branching factor, d = depth of least-cost solution)
+(Complete는 답을 찾는지 여부, Optimal은 찾은 답이 최적의 답인지 여부를 나타낸다.)
 
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tree Search Problem - informed Search"
-date:   2018-03-28 00:00:00
+date:   2018-03-29 00:00:00
 category: 인공지능
 tags: informed heuristic
 ---

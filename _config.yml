@@ -36,8 +36,8 @@ author:
     steam:  76561198089795914
 
 # Navigator
-category_path: category.html
-tag_pah: tag.html
+category_path: Category
+tag_path: Tag
 
 
 # disqus

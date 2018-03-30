@@ -11,7 +11,7 @@ Maven의 [download 페이지](http://maven.apache.org/download.cgi) 를 보면 s
 <!-- more -->
 
 ---
-# 1. source / binary release  
+### 1. source / binary release  
 
 
   * source : compile되지 않은 raw상태의 소스를 의미한다. Linux의 경우 환경에 따라 실행파일이 실행이 될 수도 안 될 수도 있기 때문에, source release를 따로 배포하는 듯 하다. 
@@ -24,7 +24,7 @@ Maven의 [download 페이지](http://maven.apache.org/download.cgi) 를 보면 s
 
 ---
 
-# 2. 동반되는 파일들
+### 2. 동반되는 파일들
 
 
 apache가 배포하는 모든 파일에는 checksum과 signature를 포함한다고 한다. 이제 대한 설명은 apache에서 [문서](https://www.apache.org/dev/release-signing)로 만들어놓았다. 궁극적인 목적은 파일이 깨지지 않았는지, 배포한 상태의 파일 그대로인지 검사하는 것이다.  
@@ -32,7 +32,7 @@ apache가 배포하는 모든 파일에는 checksum과 signature를 포함한다
 
 <br>
 
-# 2.1. checksum 
+### 2.1. checksum 
  
 `.md5`라는 생소한 확장자를 가지고 있다. 파일을 받아보면 다음과 같은 내용을 가지고 있다. 
 
@@ -50,7 +50,7 @@ md5는 Message-Digest algorithm 5의 약자로, 문자열을 읽어들여서 128
 
 <br>
 
-# 2.2. signature 
+### 2.2. signature 
 
  `.asc`확장자를 가지고 있다. 역시 처음보는 확장자였는데, PGP(Pretty Good Privacy)에 의해 사용되는 확장자로서, armored ASCII file의 약자이란다. apache는 signature를 위해 PGP를 대체할 수 있는 OSS인 GnuPG를 사용하고 있다.
 
