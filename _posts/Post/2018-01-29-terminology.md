@@ -32,6 +32,7 @@ tags: terminology
    - 프로그램 installation중, 필요한 package manager나 installer를 업데이트 해주는 것.
     (jekyll의 [bootstrap script](https://github.com/jekyll/jekyll/blob/master/script/bootstrap))
    - (Java) 자바 플랫폼을 구성하는 클래스
+   - "with Replacement"를 통해 sampling 해서 training set을 잡는 방버
 
 <hr>
 
@@ -94,10 +95,16 @@ tags: terminology
 #### `Comparable`
    - 썩 나쁘지 않다. (성능 비교)
 
+<hr>
+
+#### `Yet Another`
+   - YACC(Yet Another Compiler Compiler)
+   - YAML(Yet Another Markup Language)
+   - YAHOO(Yet Another Hierarchical, Officious Oracle)
+   - 이미 내가 만든거랑 비슷한거 한 사람 엄청 많아서 부끄럽네... 이런 느낌이다.
+
 
 Event Driven  
 call back  
 closure  
 sandbox  
-yaml  
-scale up - scale down  

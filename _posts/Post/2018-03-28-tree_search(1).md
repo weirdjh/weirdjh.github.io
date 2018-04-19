@@ -72,8 +72,7 @@ h(n)을 사용하지 않는 search. 즉, 탐색에 대한 정보가 uninformed�
 
 **3. BFS vs DFS 성능 비교**  
 
-* Time Complexity의 경우 동일하다고 말할 수 있으나, 최악의 경우를 가정하면 BFS가 약 b/(b-1) 만큼 더 빠르다. 하지만 DFS가 정상적으로 종료되는 환경이라면, 일반적으로 DFS가 더 빠르다.
-* BFS는 goal이 깊이 있지 않은 경우에 유리하다.
+* Time Complexity의 경우 동일하다고 말할 수 있으나, 최악의 경우를 가정하면 BFS가 약 b/(b-1) 만큼 더 빠르다. 하지만 many goals, no loops, no infinite paths의 상황이라면 일반적으로 DFS가 더 빠르다.
 * DFS가 메모리상 훨씬 유리하다.
 
 ---
@@ -107,8 +106,8 @@ IDS의 경우, b + (b + b^2) + ... + (b + b^2 + ... + b^d) = 123,450
 
 **6. UCS(Uniform Cost Search)**  
 
-`g(n)을 start state에서 부터 node n까지의 cost`로 정한다. g(n)이 가장 작은 node부터 탐색을 한다. Dijkstra알고리즘과 매우 흡사하다.
+`g(n)을 start state에서 부터 node n까지의 cost`로 정한다. g(n)이 가장 작은 node부터 탐색을 한다. Dijkstra알고리즘과 매우 흡사하다. 굳이 차이점을 뽑아 보자면 Dijkstra는 각 노드간의 최소 거리를 모두 구하고 UCS는 goal을 찾을 때까지만 진행된다는 차이정도가 있다.
 
-또한, `BFS는 UCS에서 모든 edge의 cost가 같은 경우와 같다`. UCS가 좀 더 일반화된 형태라고 할 수 있겠다.
+또한, `BFS는 UCS에서 모든 edge의 cost가 같은 경우와 같다`. UCS가 좀 더 일반화된 형태라고 할 수 있겠다. 각 state에의 fringe에서 최소값을 뽑아내기 위해 priority queue를 사용한다.
 
 Complete와 Optimal이 보장된다.
