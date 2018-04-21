@@ -19,6 +19,7 @@ body {
     font-size: 16px;
     line-height: $base-line-height;
     font-weight: 100;
+    letter-spacing: 0.8px;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
@@ -140,17 +141,31 @@ blockquote {
 /**
  * Code formatting
  */
+
+figure{
+    max-height: 450px;
+}
+
 pre {
     font-family: $base-font-family;
     font-size: 15px;
     border-radius: 3px;
     //padding: 8px 12px;
     tab-size:4;
-    max-height: 450px;
+}
+
+pre table,th, td{
+    border: none;
+}
+
+pre .lineno{
+    background-color : #93a1a1;
+    margin-right : 5px;
 }
 
 code {
     //padding: 1px 5px;
+    font-family: $base-font-family;
 }
 
 

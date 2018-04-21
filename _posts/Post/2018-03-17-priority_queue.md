@@ -14,7 +14,7 @@ tags: PriorityQueue Heap dijkstra
 ---
 ### Heap 구현  
 
-{% highlight python %}
+{% highlight python linenos %}
 class min_heap:
 	def __init__(self,arr):
 		self.arr = arr
@@ -53,7 +53,7 @@ Top-down 방식, Bottom-up 방식 두가지도 heapify를 구현할 수 있다. 
 ### Priority Queue 구현  
 
 
-{% highlight python %}
+{% highlight python linenos %}
 class priority_queue():
 	def __init__(self,arr):
 		self.arr = arr
@@ -99,7 +99,7 @@ pop의 경우 첫째 원소를 빼고, 마지막 원소가 처음원소 자리�
 ---
 ### Djikstra 구현  
 
-{% highlight python %}
+{% highlight python linenos %}
 INTMAX = 987654321
 
 def djikstra(start, graph):

@@ -66,6 +66,7 @@ DEPENDENCIES
   jekyll-sitemap
   kramdown
   redcarpet
+  rouge
 
 BUNDLED WITH
    1.16.1

@@ -26,7 +26,7 @@ A* 알고리즘이라는 매우 빠른 속도로 탐색을 하는 알고리즘�
 
 local search의 한 종류인데, greedy하게 search를 진행한다. 정의된 heuristic함수에 의해서 더 좋은 값이 나오지 않으면,local maximum에 도착하면 종료한다. local maxumum은 global maximum이 아닐 수 있다(= optimal하지 않다).
 
-![local]({{site.url}}/asset/180415/local.png){:height="250px" .center-image}  
+![local]({{site.url}}/asset/algorithm/local.png){:height="250px" .center-image}  
 
 위 그림을 보면, optimal한 답을 찾기 위해 처음에 어디서 시작해야 할 지를 정하는 것이 중요해 보인다. 하지만 사실상 어디서 시작하는게 좋은 것인지 알기는 쉽지 않으므로, 랜덤으로 처음 시작 상태를 주고 local maximum을 찾아가는 진행을 여러번 하는 방법을 통해 최대한 globla maximum에 근사하도록 하는 방법 등이 있다.
 
@@ -36,7 +36,7 @@ local search의 한 종류인데, greedy하게 search를 진행한다. 정의된
 
 너무나도 유명한 문제인데, N*N board에 N개의 Queen을 서로 공격하지 못하도록 배치하는 문제이다. 심심해서 Hill Climbing을 통해 이 문제를 해결하도록 구현을 해보았다.
 
-{% highlight python %}
+{% highlight python linenos %}
 import random
 
 # # of pairs of Queens that're attacking each other
@@ -150,4 +150,4 @@ if __name__=='__main__':
 --- 
 
 초기 queen들의 위치를 랜덤으로 선택하여 local maximum을 찾아가는 방법을 1000번 반복하였다. 그 결과 다음과 같은 결과를 얻을 수 있었다.  
-![result]({{site.url}}/asset/180415/result.png){:height="80px" }  
+![result]({{site.url}}/asset/algorithm/result.png){:height="80px" }  
