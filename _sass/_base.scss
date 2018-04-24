@@ -34,12 +34,54 @@ hr{
     padding: 0;
 }
 
-table{
+/* Table */
+
+table {
+    color: #333;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size : 13px;
+
     border-collapse: collapse;
+    border-spacing: 0;
+    margin-left : 20px;
+    margin-right : auto;
+    margin-bottom : 15px;
+
 }
-table, th, td{
-    border: solid 1px black;
+tbody, thead{
+    display:block;
 }
+tbody{
+    max-height: 200px;
+    overflow: auto;
+}
+td, th{
+    height: 25px;
+    padding: 0px 7px;
+}
+th{
+    /* Gradient Background */
+    background: linear-gradient(#333 0%, #444 100%);
+    color: #FFF;
+    font-weight: bold;
+    height: 40px;
+}
+td{
+    background: #FAFAFA;
+    text-align: center;
+}
+tr:nth-child(odd) td{
+    background: lighten(#C0C0C0, 19%);
+}
+/* Add border-radius to specific cells! */
+tr:first-child th:first-child {
+    border-radius: 5px 0 0 0;
+}
+tr:first-child th:last-child {
+    border-radius: 0 5px 0 0;
+}
+
+
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -144,6 +186,7 @@ blockquote {
 
 figure{
     max-height: 450px;
+    margin-bottom : 15px;
 }
 
 pre {
@@ -166,6 +209,22 @@ pre .lineno{
 code {
     //padding: 1px 5px;
     font-family: $base-font-family;
+}
+
+/* code table */
+.rouge-table {
+    margin-left : 0px;
+}
+.rouge-table tbody{
+    max-height: 450px;
+    overflow: initial;
+}
+.rouge-table .code{
+    background: #FAFAFA;
+    text-align: left;
+}
+.rouge-table tr:nth-child(odd) td{
+    background: #FAFAFA;
 }
 
 

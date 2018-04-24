@@ -27,12 +27,12 @@ Scala는 확장성있는 언어를 위해 세가지를 고려하여 제작되었
 
 다음 표는 절차 지향 언어와 컴퓨터를 비교 한 것이다.
 
-| Imperative Language    | Computer             |
-| :--------------------: | :------------------: |
-| Mutable variables      | memory cells         |
-| Variable dereference   | load instructions    |
-| Variable assginments   | store instructions   |
-| Control structure      | jumps                |   
+| Imperative Language  | Computer           |
+|----------------------|--------------------|
+| Mutable variables    | memory cells       |
+| Variable dereference | load instructions  |
+| Variable assginments | store instructions |
+| Control structure    | jumps              |   
 
 <br>
 다음에서 볼 수 있 듯, 기존 imperative language는 컴퓨터가 데이터를 읽고 처리하는 방법에 많이 닮아있다. 따라서 프로그램을 word by word로 짜면, 폰-노이만 구조에서 겪는 Bottleneck을 한계로 갖게 된다. 여기서 Scale Up의 한계가 생긴다. 이 문제와 더불어 여러 요구에 의해 디자인 된 것이 OOP 언어이다.
