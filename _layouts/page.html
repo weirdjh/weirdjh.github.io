@@ -1,14 +1,24 @@
 ---
 layout: default
 ---
-<div class="page">
+{% include page/title.html %}
 
-  <header class="page-header">
-    <h1 class="page-title">{{ page.title }}</h1>
-  </header>
+<!-- MathJax -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+{{ content }}
 
-</div>
+<!-- Align width of table header with that of table row -->
+<script type="text/javascript">
+    const thElements = document.getElementsByTagName('th'),
+    tdElements = document.getElementsByTagName('td');
+
+    for (let i = 0; i < thElements.length; i++) {
+        const widerElement = thElements[i].offsetWidth > tdElements[i].offsetWidth ? thElements[i] : tdElements[i],
+        width = window.getComputedStyle(widerElement).width;
+
+        thElements[i].style.width = tdElements[i].style.width = width;
+  }
+</script>
+
+{% include page/about.html %}

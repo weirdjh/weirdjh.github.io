@@ -1,0 +1,9 @@
+<h1 class="page-title">
+<div class="page-title__text">
+<span class="title-sub"><</span>
+{{ page.title }}
+<span class="title-sub">/></span>
+</div>
+<div class="page-title__subtitle">{{ page.subtitle }}</div>
+<span class="post-meta"> {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</span>
+</h1>

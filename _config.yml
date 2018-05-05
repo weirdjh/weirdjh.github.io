@@ -1,5 +1,5 @@
 # Site settings
-title: Heoju's Blog
+title: Find Paradise Falls
 email: hoojh93@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   
@@ -31,11 +31,12 @@ author:
 
   photo: /public/images/profile_image.jpeg 
   about:
-  social:
-    facebook: WierdHeoju
-    github: heojh93
-    google: hoojh93
-    steam:  76561198089795914
+  email: hoojh93@gmail.com
+  
+  facebook: WierdHeoju
+  github: heojh93
+  google: hoojh93
+  steam:  76561198089795914
 
 # Navigator
 category_path: Category

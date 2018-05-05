@@ -1,0 +1,310 @@
+/* 
+  Darkly Pygments Theme
+  (c) 2014 Sourcey
+  http://sourcey.com
+*/
+
+.highlight {
+  white-space: pre; 
+  overflow: auto; 
+  word-wrap: normal; /* horizontal scrolling */
+  -moz-border-radius: 3px; 
+  -webkit-border-radius: 3px; 
+  border-radius: 3px;
+  padding: 10px; 
+  color: #C1C2C3;
+}
+
+.highlighter-rouge {
+    margin: 1rem 0;
+    border-radius: 2px;
+}
+
+.highlight > pre {
+    padding: 10px 0 10px 10px;
+    letter-spacing : 1px;
+}
+
+.rouge-table {
+    margin-bottom: 0
+}
+
+.rouge-table .gl {
+    padding: 0 10px 0 0
+}
+
+.rouge-table .lineno {
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+    text-align: center
+}
+
+.rouge-table .code {
+    padding: 0
+}
+
+.rouge-table .code pre {
+    overflow: hidden;
+}
+
+.highlight pre, pre {
+    font-size: 14px;
+    background-color: #fbfbfb;
+    margin: 0
+}
+
+.highlight pre::-webkit-scrollbar {
+    height: 4px;
+    width: 4px;
+    background-color: #fbfbfb
+}
+
+.highlight pre::-webkit-scrollbar-thumb {
+    background-color: #212121
+}
+
+.highlight pre .c {
+    color: #8f5902;
+    font-style: italic
+}
+
+.highlight pre .err {
+    color: #a40000
+}
+
+.highlight pre .g {
+    color: #000
+}
+
+.highlight pre .k {
+    color: #204a87;
+    font-weight: 700
+}
+
+.highlight pre .l, .highlight pre .n {
+    color: #000
+}
+
+.highlight pre .o {
+    color: #ce5c00;
+    font-weight: 700
+}
+
+.highlight pre .x {
+    color: #000
+}
+
+.highlight pre .p {
+    color: #000;
+    font-weight: 500
+}
+
+.highlight pre .c1, .highlight pre .ch, .highlight pre .cm, .highlight pre .cp,
+.highlight pre .cpf, .highlight pre .cs {
+    color: #8f5902;
+    font-style: italic
+}
+
+.highlight pre .gd {
+    color: #a40000
+}
+
+.highlight pre .ge {
+    color: #000;
+    font-style: italic
+}
+
+.highlight pre .gr {
+    color: #ef2929
+}
+
+.highlight pre .gh {
+    color: navy;
+    font-weight: 700
+}
+
+.highlight pre .gi {
+    color: #00a000
+}
+
+.highlight pre .go {
+    color: #000;
+    font-style: italic
+}
+
+.highlight pre .gp {
+    color: #8f5902
+}
+
+.highlight pre .gs {
+    color: #000;
+    font-weight: 700
+}
+
+.highlight pre .gu {
+    color: purple;
+    font-weight: 700
+}
+
+.highlight pre .gt {
+    color: #a40000;
+    font-weight: 700
+}
+
+.highlight pre .kc, .highlight pre .kd, .highlight pre .kn, .highlight pre .kp,
+.highlight pre .kr, .highlight pre .kt {
+    color: #204a87;
+    font-weight: 700
+}
+
+.highlight pre .ld {
+    color: #000
+}
+
+.highlight pre .m {
+    color: #0000cf;
+    font-weight: 700
+}
+
+.highlight pre .s {
+    color: #4e9a06
+}
+
+.highlight pre .na {
+    color: #c4a000
+}
+
+.highlight pre .nb {
+    color: #204a87
+}
+
+.highlight pre .nc, .highlight pre .no {
+    color: #000
+}
+
+.highlight pre .nd {
+    color: #5c35cc;
+    font-weight: 700
+}
+
+.highlight pre .ni {
+    color: #ce5c00
+}
+
+.highlight pre .ne {
+    color: #c00;
+    font-weight: 700
+}
+
+.highlight pre .nf {
+    color: #000
+}
+
+.highlight pre .nl {
+    color: #f57900
+}
+
+.highlight pre .nn, .highlight pre .nx, .highlight pre .py {
+    color: #000
+}
+
+.highlight pre .nt {
+    color: #204a87;
+    font-weight: 700
+}
+
+.highlight pre .nv {
+    color: #000
+}
+
+.highlight pre .ow {
+    color: #204a87;
+    font-weight: 700
+}
+
+.highlight pre .w {
+    color: #f8f8f8;
+    text-decoration: underline
+}
+
+.highlight pre .mb, .highlight pre .mf, .highlight pre .mh, .highlight pre .mi,
+.highlight pre .mo {
+    color: #0000cf;
+    font-weight: 700
+}
+
+.highlight pre .dl, .highlight pre .sa, .highlight pre .sb, .highlight pre .sc {
+    color: #4e9a06
+}
+
+.highlight pre .sd {
+    color: #8f5902;
+    font-style: italic
+}
+
+.highlight pre .s1, .highlight pre .s2, .highlight pre .se, .highlight pre .sh,
+.highlight pre .si, .highlight pre .sr, .highlight pre .ss, .highlight pre .sx {
+    color: #4e9a06
+}
+
+.highlight pre .bp {
+    color: #3465a4
+}
+
+.highlight pre .fm, .highlight pre .vc, .highlight pre .vg, .highlight pre .vi,
+.highlight pre .vm {
+    color: #000
+}
+
+.highlight pre .il {
+    color: #0000cf;
+    font-weight: 700
+}
+
+
+
+code.highlighter-rouge {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    border-radius: 4px;
+    background-color: #F2F2F2;
+    padding: 2px 4px;
+    white-space: nowrap;
+    color: #533EDB;
+}
+
+/**
+   * Code formatting
+   */
+
+  figure{
+      max-height: 450px;
+      margin-bottom : 15px;
+  }
+
+  pre {
+      border-radius: 3px;
+      tab-size:4;
+      font-family: Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+  }
+
+  pre table,th, td{
+      border: none;
+  }
+
+  /* code table */
+  .rouge-table {
+      margin-left : 0px;
+  }
+  .rouge-table tbody{
+      max-height: 450px;
+      overflow: initial;
+  }
+  .rouge-table .code{
+      background: #FAFAFA;
+      text-align: left;
+  }
+  .rouge-table tr:nth-child(odd) td{
+      background: #FAFAFA;
+  }

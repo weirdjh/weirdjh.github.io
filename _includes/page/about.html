@@ -1,0 +1,23 @@
+<div class="about">
+<div class="about__devider">*****</div>
+<div>
+	<ul class="social-links">
+		{% if site.author.email %}
+		<a href="mailto:{{ site.author.email }}" class="social-links__entry fa fa-envelope-square" target="_blank"></a>
+		{% endif %}
+		{% if site.author.github %}
+		<a href="https://github.com/{{ site.author.github }}" class="social-links__entry fa fa-github" target="_blank"></a>
+		{% endif %}
+		{% if site.author.facebook %}
+		<a href="https://facebook.com/{{ site.author.facebook }}" class="social-links__entry fa fa-facebook" target="_blank"></a>
+		{% endif %}
+		{% if site.author.steam %}
+		<a href="https://steamcommunity.com/profiles/{{ site.author.steam }}" class="social-links__entry fa fa-steam" target="_blank"></a>
+		{% endif %}
+	</ul>
+</div>
+<div class="about__text">
+<strong> You'll find that life is still worthwhile If you just smile </strong>
+<br>☕ Pudhina theme by <a href="https://github.com/knhash/Pudhina">Knhash</a> 🛠️
+</div>
+</div>
