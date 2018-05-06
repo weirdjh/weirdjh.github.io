@@ -42,27 +42,53 @@ tags: unicode ascii
 
 U+XXXX 와 같이 문자마다 번호를 붙여서 표현한다.
 
-참고로 [Unicode Consortium](http://www.unicode.org)의 Version 9.0.0 데이터베이스에 따르면 유니코드에서 한글이 지정된 블록은 다음과 같다.
 
->
-Hangul Jamo: 1100 ~ 11FF  
-Currency Symbols 중 WON SIGN : 20A9  
-CJK Symbols and Punctuation 중 HANGUL DOT TONE MARK: 302E ~ 302F  
-Hangul Compatibility Jamo : 3130 ~ 318F  
-Enclosed CJK Letters and Months 중 한글/한국어 부분 : 3200 ~ 321E, 3260 ~ 327F  
-Hangul Jamo Extended-A : A960 ~ A97F  
-Hangul Syllables : AC00 ~ D7AF  
-Hangul Jamo Extended-B : D7B0 ~ D7FF  
-Halfwidth and Fullwidth Forms 중 Halfwidth Hangul variants 부분 : FFA0 ~ FFDC  
-Halfwidth and Fullwidth Forms 중 FULLWIDTH WON SIGN FFE6  
+<br>
 
-(출처 : https://gist.github.com/Pusnow/aa865fa21f9557fa58d691a8b79f8a6d)  
+---
 
->
+### Window와 Mac의 인코딩 차이로 인한 한글 문제
+
+**1. 한글 깨짐**  
+거지같게도, Window와 Mac은 파일을 저장할 때 각각 CP949(EUC-KR의 extension), Utf-8의 형식을 사용한다. 따라서, 윈도우에서 작성된 한글파일을 mac에서 열어보게 되면 스마트한 편집기가 아니라면 한글이 모조리 깨져있는 것을 볼 수 있다. 다음은 [넷 상](http://kkotkkio.tistory.com/86)에서 긁어온 스크립트안데, 현재 폴더에서 cc, cpp확장자를 가진 파일을 euc-kr에서 utf-8로 인코딩해준다.
+
+{% highlight shell linenos %}
+#!/bin/bash
+
+find "." -name "*.cc" -o -name "*.cpp" | while read filename
+do
+  echo $filename
+  tempName=${filename}_temp
+  mv "$filename" "$tempName"
+  iconv -c -f euc-kr -t utf-8 "$tempName" > "$filename"
+  rm "$tempName"
+done
+{% endhighlight %}
+
+
+**2. 한글 자모 분리**  
+Window와 mac의 정규화 방식에 따라 또 한번 한글을 구성하는 방식이 달라진다. "각"을 "각"으로 저장할 것이니ㅑ, "ㄱㅏㄱ"으로 저장할 것이냐를 정해주는 방식이 다르다고 생각하면 된다. [출처 : Pusnow](https://gist.github.com/Pusnow/aa865fa21f9557fa58d691a8b79f8a6d)  
+
+* `NFC (Normalize Form C : Window, Linux)`  
+NFC는 모든 음절을 Canonical Decomposition(정준 분해) 후 Canonical Composition(정준 결합) 하는 방식이다. 즉, 각을 각이라는 하나의 문자로 저장하는 방식이다. 이 방식을 사용하면 NFD 방식보다 텍스트의 사이즈는 작아지게 된다. 하지만, 옛 한글 자모의 결합으로 이루어진 한글 음절 코드가 없으므로 이 음절은 Canonical Composition 하지 못하므로 자소가 분리된 체로 저장하게 된다. 이로 인해, 현대 한글과 옛 한글이 다른 방식으로 저장되므로 텍스트를 처리할 때 유의해야 한다.
+
+* `NFD (Normalize Form D : Mac)`  
+NFD는 모든 음절을 Canonical Decomposition(정준 분해)하여 한글 자모 코드를 이용하여 저장하는 방식이다. 즉, 각을 ㄱ + ㅏ + ㄱ 로 저장하는 방식이다. 이 방식은 현대 한글과 옛 한글을 동일한 방식으로 저장한다는 장점이 있지만 NFC 방식과 비교하여 텍스트의 크기가 커진다는 문제가 있다.
+
+
+**3. detect encoding format?**  
+인터넷을 좀 둘러봤으나... 새롭게 등장하는 것이 너무도 많아서... 테스트를 좀 해봤다. 윈도우에서 "안녕하세요."가 적힌 txt파일을 그대로 들고와서 mac에서 열어보았다. "안녕하세요."라고 파일 내용이 잘 표시된다. vim에서 내용을 확인하니 "¾È³çÇÏ¼¼¿ä."라고 쓰여있다. mac의 텍스트 편집기 자체에서 파일의 인코딩 형식을 자동으로 파악한다는 것을 알았다.
+
+file을 저장할 때 인코딩 형식을 같이 저장하는 것이 아닐까? 응 아니라고 한다 [(참고)](https://superuser.com/questions/308484/do-text-files-store-their-encoding-method-for-later-decoding]). 그렇지만 때때로 유니코드 내에서는 BOM(byte order mark)를 사용해서 UTF-8인지, UTF-16인지, UTF-32인지를 판단하는 방법을 쓴다.
+
+그렇다면 mac의 텍스트 편집기는 어떻게 인코딩 형식을 알아서 "안녕하세요"를 보여줬는가?? UTF-8는 모든 byte sequence가 valid한 것이 아니기 때문에, UTF-8로 인코딩을 해보고 구멍이 뻥뻥 뚫리면 fail로 판단하고 다른 인코딩 형식일 것이다. 라고 추측하는 방법을 사용한다고 한다. 
+
 
 <br>
 
 ---
 참고 :  
 https://namu.wiki/w/UTF-8  
-http://norux.me/31
+http://norux.me/31  
+https://gist.github.com/Pusnow/aa865fa21f9557fa58d691a8b79f8a6d  
+https://superuser.com/questions/308484/do-text-files-store-their-encoding-method-for-later-decoding]

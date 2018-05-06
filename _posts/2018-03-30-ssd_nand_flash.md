@@ -15,7 +15,7 @@ tags: nand flash ssd
 
 ### NAND Flash
 
-![mos]({{site.url}}/asset/ssd/mos.png){:height="300px"}  
+![mos]({{site.url}}/assets/ssd/mos.png){:height="300px"}  
 (출처 : 한양대학교 Data-Centric System lab)
 
 원래 기존의 ROM은 이름 그대로 "Read Only"로, 비휘발성이 가장 큰 특징이다. PROM이 개발되면서부터 메모리에 1회 쓰기가 가능해졌다. 처음에는 1회만 쓰기가 가능했던 것이 점점 발전하여, 특정한 control을 거쳐 지우기 + 쓰기가 가능한 메모리로 발전되었다. 현재 NOR Flash와 NAND Flash가 대표적이다.
@@ -37,7 +37,7 @@ NAND Flash는 읽기 속도가 느린대신, 쓰기/지우기 속도가 빠르�
 
 ### NAND Flash의 구조
 
-![package]({{site.url}}/asset/ssd/package.png)  
+![package]({{site.url}}/assets/ssd/package.png)  
 
 위 그림은 메모리 구조를 간단히 그림으로 그린 것이다. 
 * package는 NAND Flash를 겉에서 보았을 때 보이는 검은 칩들이다.
@@ -70,7 +70,7 @@ SLC, MLC, TLC에 따라, FTL에서 어떤 정책들을 사용하느냐에 따라
 
 ### SSD에서의 NAND Flash
 
-![ssd]({{site.url}}/asset/ssd/ssd.png){:height="300px"}  
+![ssd]({{site.url}}/assets/ssd/ssd.png){:height="300px"}  
 
 사용자 요청은 호스트 인터페이스를 통해서 유입이 되고 SATA와 PCIe타입의 인터페이스를 사용한다. SSD 컨트롤러에 장착된 프로세서가 명령을 받아서 플래시 컨트롤러로 전달하게 된다. SSD에는 자체적으로 보드에 내장된 RAM을 가지는데, 일반적으로 메모리 맵핑 정보를 저장하거나 캐시로 사용된다. SSD는 여러개의 Channel을 통해 컨트롤러와 NAND Flash를 연결하고 있다. (출처: [카카오기술블로그](http://tech.kakao.com/2016/07/14/coding-for-ssd-part-2/))
 
