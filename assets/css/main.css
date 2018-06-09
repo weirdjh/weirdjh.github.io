@@ -103,6 +103,10 @@
     margin: 0 auto;
     display: block
   }
+  .right-image{
+    float:right;
+    padding: 0px 20px;
+  }
   .post-meta {
     font-size: 20px;
     color: #828282

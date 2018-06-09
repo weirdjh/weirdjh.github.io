@@ -1,14 +1,14 @@
 ---
 layout: page
-title: Blog
-subtitle: Unkind traces of study
+title: Diary
+subtitle: Even if yoU’re on the right traCK, you’ll get Run over if you just sit there  —Will Rogers
 ---
 
 <div>
 {% assign postsCategory = site.posts | group_by_exp:"post", "post.categories"  %}
 {% for category in postsCategory %}
 
-{% if category.name[0] == "Diary" %}
+{% if category.name[0] != "Diary" %}
 	{% continue %}
 {% endif %}
 
