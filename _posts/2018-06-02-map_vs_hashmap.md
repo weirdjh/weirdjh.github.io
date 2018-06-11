@@ -48,7 +48,7 @@ One of the biggest changes since then has been the growth of caches. Cache misse
 
 map이 python에서는 dictionary에 대응된다고 생각했다. 그래서 python에서는 dictionary가 어떻게 구현되었는지 찾아봤다. python 공식 [document](https://docs.python.org/2/faq/design.html#how-are-dictionaries-implemented)를 보면 resizable hash table을 이용해 구현되어 있다고 되어있다.
 
-원래 c++의 stl에는 hash map이 없었다. 하도 많이들 쓰니까 hash_map이란 이름으로 야매(?)로 제공을 해오다가, c++11에 이르러서 unordered_map이란 이름으로 정식 std이 되었다.
+원래 c++의 stl에는 hash map이 없었다. 하도 많이들 쓰니까 hash_map이란 이름으로 야매(?)로 제공을 해오다가, c++11에 이르러서 unordered_map이란 이름으로 정식 stl이 되었다.
 
 **1. Hash collision**  
 hash의 get은 일반적으로 time complexity가 $$O(1)$$로 알려져 있지만, 사실 어느정도 item이 들어가다 보면 그런 성능은 기대하기가 힘들다.
