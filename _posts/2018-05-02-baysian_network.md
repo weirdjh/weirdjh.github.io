@@ -31,7 +31,7 @@ tags: Beysian-Network
 
 앞서 Naive Bayesian에서 공부했던 조건부 독립 개념을 이해하면, 이 그래프를 보고 다음 식을 도출할 수 있다.  
 
-$$P(B,E,A,J,M) = P(A \mid B,E) \cdot P(A) \cdot P(J \mid A) \cdot P(M \mid A)$$
+$$P(B,E,A,J,M) = P(B) \cdot P(E) \cdot P(A \mid B,E) \cdot P(J \mid A) \cdot P(M \mid A)$$
 
 <br>
 
