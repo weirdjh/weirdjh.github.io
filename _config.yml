@@ -3,7 +3,7 @@ title: Find Paradise Falls
 email: hoojh93@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   
-url: "http://heojh93.github.io" # the subpath of your site, e.g. /blog/
+url: "https://weirdjh.github.io" # the subpath of your site, e.g. /blog/
 baseurl: ""
 #url: "http://yourdomain.com" # the base hostname & protocol for your site
 github_username:  heojh93
@@ -33,7 +33,7 @@ author:
   about:
   email: hoojh93@gmail.com
   
-  facebook: WierdHeoju
+  facebook: WeirdHeoju
   github: heojh93
   google: hoojh93
   steam:  76561198089795914
